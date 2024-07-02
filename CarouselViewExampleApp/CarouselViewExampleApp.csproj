@@ -26,15 +26,6 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
-	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'" />
-
-	<PropertyGroup Condition="'$(TargetFramework)'=='net8.0-ios'">
-	  <EnableAssemblyILStripping>false</EnableAssemblyILStripping>
-	  <CodesignKey>Apple Development: Created via API (ZHM52FTF9G)</CodesignKey>
-	  <CodesignProvision>VS Codesign Provisioning Profile</CodesignProvision>
-	  <ProvisioningType>manual</ProvisioningType>
-	</PropertyGroup>
-
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
 	  <MtouchLink>SdkOnly</MtouchLink>
 	</PropertyGroup>
