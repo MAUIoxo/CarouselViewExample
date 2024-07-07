@@ -2,7 +2,6 @@
 using CarouselViewExampleApp.Pages.Views;
 using CarouselViewExampleApp.Resources.Localization;
 using CarouselViewExampleApp.ViewModels;
-using CommunityToolkit.Maui;
 using LocalizationResourceManager.Maui;
 using Microsoft.Extensions.Logging;
 using Sharpnado.Tabs;
@@ -16,7 +15,6 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
-            .UseMauiCommunityToolkit()
             .UseLocalizationResourceManager(settings =>
             {
                 settings.AddResource(AppResources.ResourceManager);
